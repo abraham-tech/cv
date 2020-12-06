@@ -6,8 +6,9 @@
 }
 
 body {
-  background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: black;
   background-repeat: no-repeat;
+  height: 100%;
   font-size: 14px;
   line-height: 22px;
   font-family: "Montserrat", sans-serif;
@@ -79,7 +80,7 @@ p {
 }
 
 .resume-contact-info i {
-  color: #ed82e8;
+  color: rgba(2, 2, 133, 0.651);
   width: 20px;
   height: 20px;
   font-size: 20px;
@@ -101,7 +102,7 @@ p {
 .resume-follow-icons i {
   display: inline-block;
   font-size: 30px;
-  background: #ed82e8;
+  background: rgba(2, 2, 133, 0.651);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -130,7 +131,7 @@ p {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #bf5091;
+  background-color: rgba(2, 2, 133, 0.651);
   position: absolute;
   top: 0%;
   left: 0%;
@@ -159,7 +160,7 @@ p {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #ed82e8;
+  background-color: rgba(2, 2, 133, 0.651);
   position: absolute;
   top: 0%;
   left: 0%;
@@ -248,7 +249,7 @@ p {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #ed82e8;
+  background-color: rgba(2, 2, 133, 0.651);
   position: absolute;
   top: 0%;
   left: 0%;
@@ -266,5 +267,24 @@ p {
 
 .interest-item i {
   font-size: 40px;
-  color: #ed82e8;
+  color: rgba(2, 2, 133, 0.651);
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  /* padding: 10px; */
+  /* height: 800px; Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.skill-bar-name {
+  text-align: center;
 }

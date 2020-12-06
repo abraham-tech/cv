@@ -119,7 +119,7 @@ const experience = [
 
 const interests = [
   {
-    icon: "fas fa-book"
+    icon: "fas fa-laptop-code"
   },
   {
     icon: "fas fa-film"
@@ -128,7 +128,7 @@ const interests = [
     icon: "fas fa-headphones"
   },
   {
-    icon: "fas fa-gamepad"
+    icon: "fas fa-running"
   }
 ];
 
@@ -144,21 +144,25 @@ export default function App() {
             />
           </div>
           <div className="resume-profile-info">
-            <h1 className="name">Kriss Frandsen</h1>
-            <h2 className="career">Front-end Developer</h2>
+            <h1 className="name">Abraham Mathewos</h1>
+            <h2 className="career">Full-stack Developer</h2>
           </div>
           <div className="resume-about">
             <h3>About Me</h3>
             <p>
-              I'm a Front-end Developer and a mom. I consider myself "forever
-              student" as I love learning and searching on the web. I am firm
-              believer of if you want to do something, do it!
+              I love computers and technology, and above all Internet, which
+              connects computers and IoT devices and makes them alive.
+              Developers are superheroes, they solve real-life problems using
+              technology. Everybody wants to be a superhero. Therefore, it
+              requires a lot of sacrifices to put some effort into learning new
+              technologies every day. That's why I call myself a
+              <b> Life Long Learner</b>.
             </p>
           </div>
           <div className="resume-contact">
             <h3>Contact Me</h3>
             <div className="resume-contact-info">
-              {contactList.map(item => (
+              {contactList.map((item) => (
                 <ContactLink key={item.link} {...item} />
               ))}
             </div>
@@ -166,7 +170,7 @@ export default function App() {
           <div className="resume-follow">
             <h3>Follow Me</h3>
             <div className="resume-follow-icons">
-              {followList.map(item => (
+              {followList.map((item) => (
                 <FollowIcon key={item.id} {...item} />
               ))}
             </div>
@@ -175,25 +179,31 @@ export default function App() {
       </div>
       <div className="resume-right">
         <ResumeItem title="Education">
-          {education.map(item => (
+          {education.map((item) => (
             <TimeRangeBlock {...item} />
           ))}
         </ResumeItem>
         <ResumeItem title="Experience">
-          {experience.map(item => (
+          {experience.map((item) => (
             <TimeRangeBlock {...item} />
           ))}
         </ResumeItem>
         <ResumeItem title="Skills">
-          <SkillBar title="HTML5" value={4} />
-          <SkillBar title="CSS3" value={4} />
-          <SkillBar title="Javascript" value={3} />
-          <SkillBar title="ReactJs" value={3} />
-          <SkillBar title="Photoshop" value={3} />
-          <SkillBar title="Microsoft Office" value={4} />
+          <div classNam="row">
+            <div className="column">
+              <SkillBar title="MERN stack" value={90} />
+              <SkillBar title="Python" value={80} />
+              <SkillBar title="Java" value={80} />
+            </div>
+            <div className="column">
+              <SkillBar title="ReactJs" value={93} />
+              <SkillBar title="Docker & VM" value={93} />
+              <SkillBar title="Nodejs" value={94} />
+            </div>
+          </div>
         </ResumeItem>
         <InterestItem title="Interests">
-          {interests.map(item => (
+          {interests.map((item) => (
             <Interest {...item} />
           ))}
         </InterestItem>
