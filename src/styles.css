@@ -49,15 +49,27 @@ p {
 }
 
 .resume-profile img {
-  width: 250px;
-  height: 250px;
+  /* width: 250px; */
+  height: 200px;
   margin-top: -70px;
+  border-radius: 50% 20% 50%;
+  background: #bada55;
+  background-color: rgba(2, 2, 133, 0.651);
+  border-width: 20px;
+
+  /* border-radius: 50%; */
+  /* background-color: rgba(2, 2, 133, 0.651); */
+  /* position: absolute; */
 }
 
 .resume-profile-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 200px;
+  margin-top: -70;
+  border-radius: 50% 20% 50%;
+  background: rgba(2, 2, 133, 0.651);
 }
 
 .resume-profile-info {

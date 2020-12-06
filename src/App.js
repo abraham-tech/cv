@@ -7,72 +7,73 @@ import TimeRangeBlock from "./component/TimeRangeBlock.js";
 import SkillBar from "./component/SkillBar.js";
 import Interest from "./component/Interest.js";
 import InterestItem from "./component/InterestItem.js";
+var imageName = require("./assets/profile1.jpg");
 
 const contactList = [
   {
-    link: "tel:0767676395",
+    link: "tel:+4673-3339-4515",
     icon: "fas fa-phone",
-    children: <span>076-7676-395</span>
+    children: <span>+4673-3339-4515</span>
   },
   {
-    link: "https://goo.gl/maps/K4EL2YiE6xjA1swJ",
+    link: "https://goo.gl/maps/eAQZZpskCs8D81gh9",
     icon: "fas fa-map-marker",
-    children: <span>Malmo, Sweden</span>
+    children: <span>Stockholm, Sweden</span>
   },
   {
-    link: "mailto:krissfrandsen@gmail.com",
+    link: "mailto:abraham.mathewos.meja@gmail.com",
     icon: "fas fa-envelope",
-    children: <span>krissfrandsen</span>
+    children: <span>abraham.mathewos.meja</span>
   },
   {
-    link: "google.com",
+    link: "https://goo.gl/maps/57xTURCphyqFNWaE6",
     icon: "fas fa-home",
-    children: <span>krissfrandsen.com</span>
+    children: <span> Saltsjöbaden </span>
   }
 ];
 
 const followList = [
   {
-    link: "https://www.facebook.com/krissfrandsen",
+    link: "https://www.facebook.com/abraham.mathewos.1/",
     icon: "fab fa-facebook"
   },
   {
-    link: "https://www.instagram.com/iamkrissyness/?hl=en",
+    link: "https://www.instagram.com/abraham.mathewos/?hl=en",
     icon: "fab fa-instagram"
   },
   {
-    link: "https://www.pinterest.se/krissfrandsen/",
+    link: "https://www.pinterest.se/",
     icon: "fab fa-pinterest"
   },
   {
-    link: "https://www.linkedin.com/in/mary-kriss-frandsen-29ba4053/",
+    link: "https://www.linkedin.com/in/abraham-mathewos-62aa02138/",
     icon: "fab fa-linkedin"
   },
   {
-    link: "https://codepen.io/krissfran",
+    link: "https://codesandbox.io/u/abraham-tech",
     icon: "fab fa-codepen"
   },
   {
-    link: "https://github.com/krissfran",
+    link: "https://github.com/abraham-tech",
     icon: "fab fa-github"
   }
 ];
 
 const education = [
   {
-    startDate: new Date("2019-09-02"),
-    endDate: new Date("2020-01-21"),
-    title: "Behörighetsgivande utbildning i svenska",
+    startDate: new Date("2013"),
+    endDate: new Date("2018"),
+    title: "Bachelor of Science in Software Engineering",
     children: (
       <>
-        <p>Malmö University</p>
+        <p>Addis Ababa University</p>
       </>
     )
   },
   {
-    startDate: new Date("2005-10-21"),
-    endDate: new Date("2009-11-02"),
-    title: "Bachelor of Science in Nutrition",
+    startDate: new Date("2016"),
+    endDate: new Date("2016"),
+    title: "IBM - Mobile Application Developer with Worklight",
     children: (
       <>
         <p>University of the Philippines</p>
@@ -83,35 +84,35 @@ const education = [
 
 const experience = [
   {
-    startDate: new Date("2020-01-08"),
-    endDate: new Date("ongoing"),
-    title: "Waitress",
+    startDate: new Date("2018"),
+    endDate: new Date("2020"),
+    title: "MED INNOVATION",
     children: (
       <>
-        <p>Hai Restaurant</p>
-        <p>Malmö, Sweden</p>
+        <p>Full-stack developer</p>
+        <p>remote, Italy</p>
       </>
     )
   },
   {
-    startDate: new Date("2012-09-30"),
-    endDate: new Date("2013-05-30"),
-    title: "Nutrition Advisor",
+    startDate: new Date("2018"),
+    endDate: new Date("2018"),
+    title: "360Ground",
     children: (
       <>
-        <p>Abbott Laboratories</p>
-        <p>Manila, Philippines</p>
+        <p>Junior Developer</p>
+        <p>Internship, Ethiopia</p>
       </>
     )
   },
   {
-    startDate: new Date("2009-11-30"),
-    endDate: new Date("2012-08-30"),
-    title: "Real Estate Agent",
+    startDate: new Date("2016"),
+    endDate: new Date("2016"),
+    title: "YYT International Software Development",
     children: (
       <>
-        <p>SM Development Corp.</p>
-        <p>Manila, Philippines</p>
+        <p>Tester and Developer</p>
+        <p>part-time, Ethiopia</p>
       </>
     )
   }
@@ -138,10 +139,7 @@ export default function App() {
       <div className="resume-left">
         <div className="resume-profile">
           <div className="resume-profile-img">
-            <img
-              src="https://i.pinimg.com/originals/15/d2/75/15d275683940f589ed37dc3a169b9fc3.gif"
-              alt="avatar"
-            />
+            <img src={imageName} alt="avatar" />
           </div>
           <div className="resume-profile-info">
             <h1 className="name">Abraham Mathewos</h1>
